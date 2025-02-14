@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/output.css">
+    <style>
+        .lds-ring,
+        .lds-ring div {
+            box-sizing: border-box;
+        }
+
+        .lds-ring {
+            display: inline-block;
+            position: relative;
+            width: 80px;
+            height: 80px;
+        }
+
+        .lds-ring div {
+            box-sizing: border-box;
+            display: block;
+            position: absolute;
+            width: 64px;
+            height: 64px;
+            margin: 8px;
+            border: 8px solid currentColor;
+            border-radius: 50%;
+            animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+            border-color: currentColor transparent transparent transparent;
+        }
+
+        .lds-ring div:nth-child(1) {
+            animation-delay: -0.45s;
+        }
+
+        .lds-ring div:nth-child(2) {
+            animation-delay: -0.3s;
+        }
+
+        .lds-ring div:nth-child(3) {
+            animation-delay: -0.15s;
+        }
+
+        @keyframes lds-ring {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+
+<body class="font-outfit min-h-screen bg-gradient-to-b from-[#0b004e] via-[#1d152f] to-[#002834]">
+    <!--header-->
+    <header class="w-full h-24 border-b  flex justify-between px-5 md:justify-around ">
+        <figure class="h-full flex items-center justify-center">
+            <img src="assets/img/logo.png" class="w-32 cursor-pointer md:w-36" alt="">
+        </figure>
+        <nav class=" hidden md:flex">
+            <ul class="flex items-center justify-center gap-10 cursor-pointer text-white font-extralight">
+                <li>Home</li>
+                <li>Features</li>
+                <li>Pricing</li>
+                <li>Blog</li>
+            </ul>
+        </nav>
+        <div class="flex items-center justify-center"><span
+                class="w-28 p-2 flex items-center justify-center cursor-pointer  bg-white rounded-3xl">Sign
+                up</span>
+        </div>
+    </header>
+    <!--hero section-->
+    <section class="w-full text-white mt-16 md:mt-20 flex flex-col gap-9 items-center">
+        <div class="text-4xl md:text-[50px] md:gap-8 lg:text-[60px] flex flex-col font-bold text-center">
+            <p>Largest</p>
+            <p>Crypto Marketplace</p>
+        </div>
+        <p class="w-[350px]  text-center mt-3">Welcome to the world's largest cryptocurrency marketplace. Sign
+            up
+            to
+            explore
+            more
+            about cryptos.
+        </p>
+        <div class="w-[74%] flex justify-between items-center px-2  h-14 bg-white rounded-lg sm:w-[480px]">
+            <input type="text" class="h-full w-[70%] text-black outline-none" placeholder="Search crypto...">
+            <button class="h-[70%] px-8 text-lg flex items-center justify-center rounded-md bg-blue-500 ">Search
+            </button>
+        </div>
+    </section>
+    <!--Table -->
+    <section class="w-full flex  justify-center items-center">
+        <table
+            class="hidden text-white table-auto w-full rounded-xl  max-w-[800px] mt-12 bg-gradient-to-b from-[#5403ff26] to-[#69029926]">
+            <thead class="w-full text-md font-normal p-3">
+                <tr class="text-center *:p-3">
+                    <th class=" font-normal">#</th>
+                    <th class=" font-normal text-left">Coins</th>
+                    <th class="font-normal text-left">Price</th>
+                    <th class="font-normal">24H Change</th>
+                    <th class="font-normal">Market Cap</th>
+                </tr>
+            </thead>
+            <tbody class="text-center">
+
+
+
+            </tbody>
+        </table>
+        <div class="lds-ring text-white mt-8 ">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </section>
+
+    <!--footer-->
+
+    <section class="w-full flex items-center border-t justify-center h-32 mt-32 gap-3">
+        <p class="text-white text-4xl">Ali Nikfarjam</p>
+        <a href="https://www.instagram.com/aliniki.web/">
+            <i class="fa-brands fa-instagram text-white text-4xl"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/ali-nikfarjam-ba4028208/">
+            <i class="fa-brands fa-linkedin text-white text-4xl"></i>
+        </a>
+    </section>
+</body>
+<script src="main.js"></script>
+
+</html>
