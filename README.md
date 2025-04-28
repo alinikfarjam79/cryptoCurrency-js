@@ -2,7 +2,7 @@
 
 - [Demo Link](https://alinikfarjam79.github.io/cryptoCurrency-js)
 - **Developed by**: Ali nikfarjam
-- **Created**: 2025-12-10
+- **Created**: 2025-14-02
 - **Technologies Used**: HTML, CSS, TailwindCSS, JavaScript
 - **Role**: Frontend
 
